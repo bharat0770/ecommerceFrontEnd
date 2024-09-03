@@ -7,6 +7,7 @@ export const orderApi = createApi({
         baseUrl: `${import.meta.env.VITE_SERVER}/api/v1/order/`
     }),
     tagTypes : ["order"], 
+
     endpoints: (builder) => ({
         newOrder: builder.mutation<MessageResponse, newOrderRequest>({
             query: (order) => ({
@@ -17,7 +18,6 @@ export const orderApi = createApi({
             invalidatesTags : ["order"]
         }),
         updateOrder: builder.mutation<singleOrderResponse, string>({
-            // query: ({ userId, orderId }) => ({
                 query: (orderId) => ({
                     url: `/id?id=${orderId}`,
                     method: "PUT",
@@ -25,7 +25,6 @@ export const orderApi = createApi({
                 invalidatesTags : ["order"]
             }),
             deleteOrder: builder.mutation<singleOrderResponse, string>({
-                // query: ({ userId, orderId }) => ({
                     query: (orderId) => ({
                         url: `/id?id=${orderId}`,
                         method: "DELETE",
