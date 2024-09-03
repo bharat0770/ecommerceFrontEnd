@@ -1,0 +1,90 @@
+.search-ui{
+    display: flex;
+    // justify-content: ;
+    height: 80vh;
+    >aside{
+        // border: .5px solid grey;
+        box-shadow: $boxshadow; 
+        border-radius: 10px;
+        background-color: white;
+        width: 25%;
+        margin: 10px;
+        padding: 20px;
+        box-sizing: border-box;
+        >h2, h4{
+        font-family: $font1;
+    }
+    >div{
+        width : 80%; 
+        >select, input{
+            width : 100%; 
+            outline: none;
+            // border : .5px soli grey;
+            border-radius: 5px;
+            padding: 3px;
+            font-family: $font1;
+    }
+    }
+    }
+    >main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        background-color: white;
+        border-radius: 10px;
+        margin: 5px;
+        padding-left: 20px;
+        box-shadow: $boxshadow;
+        width: 75%;
+        box-sizing: border-box;
+        height: 100%;
+    input{
+        width : 50%; 
+        border: none;
+        margin-left: 20px;
+        border-radius: 10px;
+        font-family: $font1;
+        outline: none;
+        font-size: large;
+    }
+    .product-list{
+        position: relative;
+        height:  calc(100% - 10rem);
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y : auto;
+        gap: 5rem;
+        align-items: flex-start;
+        &::-webkit-scrollbar{
+            visibility: hidden;
+        }
+    }
+    .pagination{
+        min-height: 0px;
+        flex: 1;
+        margin : 0px;
+        font-size: small;
+        padding : 0px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        >button{
+            cursor: pointer;
+            color : white;  
+            margin-right: 5px;
+            margin-left: 5px;
+            border: none;
+            background-color: $color2;
+            font-family: $font1;
+            border-radius: 5px;                
+            padding-right    : 5px;
+            &:disabled{
+                background-color: rgb(255, 168, 109);
+                cursor: default;
+            }
+        }
+    }
+    }
+}   

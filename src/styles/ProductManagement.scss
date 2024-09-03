@@ -1,0 +1,11 @@
+.product-management{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    max-height: auto;
+        img{
+            height: auto;
+            width: 50%;
+            object-fit: contain;
+        }
+}

@@ -1,0 +1,48 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font1;
+}
+.userLogin{
+    background-color: white;
+    width: 25%;
+    border : 1px solid grey;
+    box-shadow: $boxshadow;
+    border-radius: 5px;
+    padding: 40px;
+    >h1{    
+        text-align: center;
+        font-size: xx-large;
+        font-weight: light;
+    }
+    >div{
+        font-weight: light;
+        >select, input{
+            width: 100%;
+            border: 0.5px solid grey;
+            border-radius: 5px;
+            padding : 10px;
+            opacity: 0.8;
+            outline: none;
+        }
+        >button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: rgb(32, 136, 255);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            > .gicon{
+                background-color:white;
+                font-size : 25px;
+                margin: 5px;
+                border-radius: 50%;
+        }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+//? variables
+$color1 : whitesmoke;
+$color2 : rgb(255, 119, 46);
+$color3 : rgb(38, 41, 117);
+$font1 :  "Playwrite NG Modern", cursive;
+$boxshadow: 0px 5px 5px 5px rgba(168, 168, 168, 0.575);
+@import "header.scss"; 
+@import "adminHamburger.scss";
+@import "home.scss";
+@import "productCard.scss";
+@import "cart.scss"; 
+@import "shipping.scss";
+@import "login.scss";
+@import "search.scss";
+@import "ProductManagement.scss"; 
+
+@import "../admin/management/styles/createProduct.scss";
+@import "../admin/management/styles/updateProduct.scss";
+@import "../admin/management/styles/transactionManagement.scss";
+@import "../admin/management/styles/transaction.scss";
+@import "../admin/management/styles/allProducts.scss";
+*{
+    font-size: small;
+}
+body{
+    background-color: rgb(236, 236, 236);
+    font-size: larger;
+    font-family: $font1; 
+    user-select: none;
+    z-index: 800;
+    .red{
+        color : red;
+    }
+    .green{
+        color : green;
+    }
+}
+
+

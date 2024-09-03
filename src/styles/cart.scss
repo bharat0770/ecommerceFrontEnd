@@ -1,0 +1,101 @@
+.cart {
+    height: 85vh;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+    >main {
+        background-color: white;
+        border-radius: 1rem;
+        margin: 20px;
+        padding: 2rem;
+
+        width: 100%;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        >.cart-item {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            img{
+                float: left;
+                height: 100px;
+                width: 100px;
+                object-fit: contain;
+            }
+
+            >.cart-item-info {
+                // background-color: red;   
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover {
+                        color: $color2;
+                    }
+                }
+
+                >.cart-item-name {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    p {
+                        font-weight: bold;
+                    }
+                }
+
+                >.cart-item-btns {
+
+                    // font-size: larger;
+                    button {
+                        font-size: larger;
+                        text-decoration: none;
+                        width: 40px;
+                        text-align: center;
+                        margin: 10px;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+    >aside {
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        // align-self: center;
+        margin: 1rem;
+        width: 50rem;
+        
+        input {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: .7rem;
+                width: 90%;
+                }
+            .checkout-link {
+            text-decoration: none;
+            border-radius: 1rem;
+            padding: .7rem;
+            background-color: $color2;
+            color: white;
+            display: inline;
+        }
+            
+            }
+            }

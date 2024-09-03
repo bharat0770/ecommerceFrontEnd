@@ -1,0 +1,88 @@
+.admin-hamburger {
+    .admin-hamburger-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 20%;
+        background-color: white;
+        border: 1px solid #ccc;
+        z-index: 1001;
+        display: flex; 
+        transform: translateX(-100%);
+        transition: transform 0.3s ease; /* Smooth slide transition */
+        > ul { 
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            flex-direction: column;
+            align-items: center;
+            > li {
+                background-color: white;
+                width: 100%;
+                padding-bottom: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                overflow: hidden;
+                text-align: center; 
+                &:hover{
+                    background-color: rgb(245, 245, 245);
+                    border-radius: 10px;
+                }
+                a {
+                    text-decoration: none;
+                    font-size: large;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .admin-hamburger-content.open {
+        transform: translateX(0); /* Slide into view */
+        // display: block;
+    }
+
+    .admin-hamburger-btn {
+        display: flex;
+        flex-direction: column;
+        border: none;
+        // background-color: black;
+        padding: 10px;
+        border-radius: 10%;
+        color: white;
+        cursor: pointer;
+        padding: 2px;
+
+        > span {
+            background-color: $color3;
+            width: 20px;
+            height: 4px;
+            margin: 2px;
+        }
+    }
+}
+
+.cancel-btn{
+    top: 0px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1001;
+    position: fixed;
+    left: 20%;
+    padding  : 10px; 
+    cursor: pointer;
+    font-size: 20px;
+    background-color: transparent   ;
+    color : white;
+    border : none; 
+}
+.cancel-btn.open{
+    // top: 20px;
+    transform: translateY(0%);
+}
+
+

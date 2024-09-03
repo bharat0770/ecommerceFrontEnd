@@ -1,0 +1,55 @@
+.update-product{
+    display:  flex; 
+    width: 100%; 
+    height: auto;
+    justify-content: center ;
+    
+    .old-product{
+        display:  flex; 
+        flex-direction: column;
+        text-align: center; 
+        justify-content: center;
+        background-color: white;
+        width: 25%;
+        // border : 1px solid grey;
+        box-shadow: $boxshadow;
+        border-radius: 5px;
+        padding: 40px;
+        > img{
+            height: auto;
+            width: 50%;
+            object-fit: contain ;
+            align-self: center;
+         }
+    }
+    > form{
+        display:  flex;
+        flex-direction: column;
+        text-align: center; 
+        justify-content: center;
+        background-color: white;
+        width: 25%;
+        // border : 1px solid grey;
+        box-shadow: $boxshadow;
+        border-radius: 5px;
+        padding: 40px;
+        > input {
+            border : 1px solid grey;
+            border-radius: 2%;
+            outline: none;
+            padding: 20px;
+            margin: 20px;
+            font-family: $font1;
+        }
+        > button {
+         padding: 20px;
+         margin: 20px;
+     }
+     > img{
+        height: auto;
+        width: 50%;
+        object-fit: contain;
+        align-self: center;
+     }
+ }
+}
