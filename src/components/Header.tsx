@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { auth } from "../firebase";
 import toast from "react-hot-toast";
 import AdminHamburger from "./AdminHamburger";
+import { Box } from "@mui/material";
+import { Flex } from "@chakra-ui/react";
 
 // const user = { id: '', role: '' };
 
@@ -25,8 +27,10 @@ const Header = ({ user }: Proptypes) => {
     };
     return (
         <>
-            <nav className="Header">
-                <AdminHamburger />
+            <Flex className="Header" m={0} p={5} bg={"gray.100"} alignItems={"center"}>
+                <Box mr={"auto"}>
+                <AdminHamburger/>
+                </Box>
                 <Link to="/">Home</Link>
                 <Link to="/search">
                     <FaSearch />
@@ -50,7 +54,7 @@ const Header = ({ user }: Proptypes) => {
                     </>
                 ) : <Link to="/logIn"><FaSignInAlt /></Link>
                 }
-            </nav>
+            </Flex>
         </>
     );
 };
